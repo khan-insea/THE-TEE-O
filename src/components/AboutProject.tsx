@@ -73,7 +73,7 @@ export const AboutProject: React.FC = () => {
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-white/15 text-[11px] text-[#FAF7EF]/75 italic">
-                  Theo nguồn năm 2023 được hồ sơ dự án dẫn lại.
+                  Theo nguồn năm 2023.
                 </div>
               </div>
 
