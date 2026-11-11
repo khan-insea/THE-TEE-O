@@ -1,0 +1,6 @@
+{
+  "name": "THE TEE-O — Nhang muỗi từ cùi tiêu khô",
+  "description": "Dự án khởi nghiệp của nhóm sinh viên Trường Đại học Kiên Giang: Nhang muỗi từ cùi tiêu khô – Kiến tạo giá trị xanh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

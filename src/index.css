@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, serif;
+  --color-brand-green: #173B24;
+  --color-brand-cream: #FAF7EF;
+  --color-brand-brown: #754C30;
+  --color-brand-gold: #D4B365;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
