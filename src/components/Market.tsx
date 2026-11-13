@@ -36,13 +36,9 @@ export const Market: React.FC = () => {
             <span>Nghiên cứu thị trường</span>
           </div>
 
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#173B24] leading-tight mb-4">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#173B24] leading-tight">
             Lắng nghe để phát triển sản phẩm
           </h2>
-
-          <p className="text-base sm:text-lg text-[#173B24]/80 leading-relaxed font-normal">
-            Dữ liệu khảo sát từ người tiêu dùng giúp định hướng nhóm trong việc cải tiến đặc tính nhang khoanh và xây dựng kênh tiếp cận phù hợp.
-          </p>
         </div>
 
         {/* Survey Chart Container - Streamlined & Compact */}
@@ -97,7 +93,7 @@ export const Market: React.FC = () => {
           <div className="mt-4 pt-3 border-t border-[#173B24]/10 flex items-start gap-2 text-[11px] sm:text-xs text-[#754C30]">
             <Info className="w-3.5 h-3.5 text-[#754C30] shrink-0 mt-0.5" />
             <p className="italic leading-relaxed">
-              Nguồn khảo sát của nhóm dự án, tháng 9–10/2026, n = 100. Kết quả mang tính định hướng, chưa đại diện toàn thị trường; sẵn sàng dùng thử không đồng nghĩa cam kết mua.
+              Nguồn khảo sát của nhóm, tháng 9–10/2026, n = 100. Kết quả mang tính định hướng, chưa đại diện toàn thị trường; sẵn sàng dùng thử không đồng nghĩa cam kết mua.
             </p>
           </div>
         </div>

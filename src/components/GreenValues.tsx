@@ -43,13 +43,9 @@ export const GreenValues: React.FC = () => {
             <span>Kinh tế tuần hoàn</span>
           </div>
 
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#173B24] leading-tight mb-4">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#173B24] leading-tight">
             Tạo giá trị mới từ nông nghiệp địa phương
           </h2>
-
-          <p className="text-base sm:text-lg text-[#173B24]/80 leading-relaxed font-normal">
-            Dự án hướng đến tác động tích cực trên cả 3 khía cạnh: kinh tế nông nghiệp, môi trường sinh thái và sức khỏe đời sống.
-          </p>
         </div>
 
         {/* 3 Green Values Cards */}

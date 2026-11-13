@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Compass, Package, Sparkles, Image as ImageIcon } from 'lucide-react';
+import { Compass, Package, Image as ImageIcon } from 'lucide-react';
 
 const HERO_BANNER_IMAGE = '/assets/aistudio/Green-Gold_Mosquito_Incense_Banner_234f33cb.png';
 
@@ -27,11 +27,11 @@ export const Hero: React.FC = () => {
             {/* Nhãn */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#173B24]/10 border border-[#173B24]/15 text-[#173B24] text-xs sm:text-sm font-semibold tracking-wide mb-4">
               <span className="w-2 h-2 rounded-full bg-[#D4B365] animate-pulse" />
-              <span>Dự án sinh viên · Trường Đại học Kiên Giang</span>
+              <span>Trường Đại học Kiên Giang</span>
             </div>
 
             {/* H1 */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl xl:text-5xl font-bold text-[#173B24] tracking-tight leading-[1.2] mb-3">
+            <h1 className="font-['Playfair_Display',Georgia,serif] text-3xl sm:text-4xl md:text-5xl xl:text-[3.25rem] font-semibold text-[#173B24] tracking-normal leading-[1.2] mb-3">
               Nhang muỗi từ cùi tiêu khô
             </h1>
 
@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
 
             {/* Mô tả */}
             <p className="text-base sm:text-lg text-[#173B24]/85 leading-relaxed mb-8 max-w-2xl font-normal">
-              Dự án khởi nghiệp của nhóm sinh viên Trường Đại học Kiên Giang, nghiên cứu tận dụng cùi tiêu khô làm nguyên liệu nền cho nhang xua muỗi, kết hợp tinh dầu thực vật, hướng đến phát triển sản phẩm gắn với kinh tế tuần hoàn.
+              Sản phẩm khởi nghiệp của nhóm sinh viên Trường Đại học Kiên Giang, nghiên cứu tận dụng cùi tiêu khô làm nguyên liệu nền cho nhang xua muỗi, kết hợp tinh dầu thực vật, hướng đến phát triển sản phẩm gắn với kinh tế tuần hoàn.
             </p>
 
             {/* Hai nút */}
@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
                 className="inline-flex items-center justify-center gap-2.5 bg-[#173B24] hover:bg-[#1f4e30] text-[#FAF7EF] px-6 py-3.5 rounded-xl font-medium text-base shadow-sm hover:shadow-md transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#173B24] group"
               >
                 <Compass className="w-5 h-5 text-[#D4B365] group-hover:rotate-45 transition-transform" />
-                <span>Khám phá dự án</span>
+                <span>Khám phá THE TEE-O</span>
               </a>
 
               <a
@@ -72,11 +72,11 @@ export const Hero: React.FC = () => {
             <div className="pt-4 border-t border-[#173B24]/10 w-full flex flex-wrap items-center gap-y-2 gap-x-6 text-xs sm:text-sm text-[#173B24]/75">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#173B24]" />
-                <span>Mẫu nhang khoanh thực tế</span>
+                <span>Mẫu nhang nụ thực tế</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#D4B365]" />
-                <span>Phụ phẩm hồ tiêu Kiên Giang</span>
+                <span>Phụ phẩm hồ tiêu An Giang</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#754C30]" />
@@ -92,7 +92,7 @@ export const Hero: React.FC = () => {
                 {!imageError ? (
                   <img
                     src={HERO_BANNER_IMAGE}
-                    alt="Banner giới thiệu dự án THE TEE-O — Nhang muỗi từ cùi tiêu khô"
+                    alt="Banner giới thiệu THE TEE-O — Nhang muỗi từ cùi tiêu khô"
                     className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
                     onError={() => setImageError(true)}
                     loading="eager"
@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
                   <div className="w-full h-full p-6 flex flex-col items-center justify-center text-center bg-[#FAF7EF] border-2 border-dashed border-[#173B24]/20 rounded-xl">
                     <ImageIcon className="w-12 h-12 text-[#754C30] mb-3 opacity-60" />
                     <span className="text-sm font-semibold text-[#173B24] mb-1">
-                      Banner giới thiệu dự án
+                      Banner giới thiệu THE TEE-O
                     </span>
                     <span className="text-xs text-[#754C30] font-mono break-all max-w-xs">
                       {HERO_BANNER_IMAGE}
@@ -117,11 +117,6 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Chú thích ảnh */}
-            <div className="mt-3 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-medium text-[#754C30]">
-              <Sparkles className="w-3.5 h-3.5 text-[#D4B365]" />
-              <span>Nhận diện thương hiệu & ý tưởng sản phẩm THE TEE-O</span>
-            </div>
           </div>
         </div>
       </div>

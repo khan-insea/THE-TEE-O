@@ -4,9 +4,9 @@ import { VideoConfig } from '../types';
 
 // Central video configuration: easy to update later
 export const CURRENT_VIDEO_CONFIG: VideoConfig = {
-  kind: 'none', // 'none' | 'youtube' | 'mp4' | 'link'
-  src: '',
-  title: 'Video giới thiệu dự án',
+  kind: 'youtube', // 'none' | 'youtube' | 'mp4' | 'link'
+  src: 'https://youtu.be/kSliU-7CNSM?si=coY3Zj5bN_oJ8jED',
+  title: 'Video giới thiệu THE TEE-O',
   poster: '/assets/aistudio/9f63c8f5-caff-48e9-8bf0-957ece5af14d_33256ef1.jpg',
 };
 
@@ -45,7 +45,7 @@ export const JourneyVideo: React.FC = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-[#173B24]/80 leading-relaxed font-normal">
-            Từ những mẻ mẫu đầu tiên đến hoạt động giới thiệu dự án, mỗi bước đi là cơ hội để nhóm lắng nghe và tiếp tục hoàn thiện.
+            Từ những mẻ mẫu đầu tiên đến hoạt động giới thiệu sản phẩm, mỗi bước đi là cơ hội để nhóm lắng nghe và tiếp tục hoàn thiện.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export const JourneyVideo: React.FC = () => {
                 <div className="relative w-full h-full flex items-center justify-center">
                   <img
                     src={CURRENT_VIDEO_CONFIG.poster}
-                    alt="Nhóm dự án THE TEE-O thuyết trình trên sân khấu"
+                    alt="Nhóm THE TEE-O thuyết trình trên sân khấu"
                     className="w-full h-full object-cover opacity-85"
                   />
                   {/* Subtle dark gradient overlay to ensure text readability */}
@@ -65,7 +65,7 @@ export const JourneyVideo: React.FC = () => {
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-medium border border-white/30 shadow-sm">
                       <Clock className="w-4 h-4 text-[#D4B365]" />
-                      <span>Video giới thiệu dự án — Sẽ được cập nhật</span>
+                      <span>Video giới thiệu — Sẽ được cập nhật</span>
                     </div>
                   </div>
                 </div>
@@ -76,7 +76,8 @@ export const JourneyVideo: React.FC = () => {
                   src={getEmbedUrl(CURRENT_VIDEO_CONFIG.src)}
                   title={CURRENT_VIDEO_CONFIG.title}
                   className="w-full h-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 />
               )}
@@ -142,13 +143,13 @@ export const JourneyVideo: React.FC = () => {
             <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden bg-white">
               <img
                 src={AUDITORIUM_GROUP_IMAGE}
-                alt="Những khoảnh khắc đồng hành cùng dự án THE TEE-O tại hội trường"
+                alt="Những khoảnh khắc đồng hành cùng THE TEE-O tại hội trường"
                 className="w-full h-full object-cover hover:scale-103 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
             <p className="mt-3 text-xs sm:text-sm font-medium text-[#173B24] text-center">
-              Những khoảnh khắc đồng hành cùng dự án
+              Những khoảnh khắc đồng hành cùng THE TEE-O
             </p>
           </div>
         </div>

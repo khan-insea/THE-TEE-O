@@ -1,7 +1,18 @@
 import React from 'react';
-import { CircleDot, FlaskConical, AlertCircle, Sparkles, CheckCircle2 } from 'lucide-react';
+import {
+  CircleDot,
+  AlertCircle,
+  Settings,
+  Check,
+  Home,
+  Clock,
+  Wind,
+  AlertTriangle,
+  Users,
+} from 'lucide-react';
 
 const BRAND_LOGO_IMAGE = '/assets/aistudio/logo_c7fe5034.png';
+const PRODUCT_LABEL_IMAGE = '/assets/aistudio/Nh_n_Nhang_Mu_i_C_i_Ti_u_Kh_-removebg-preview_7e1ea489.png';
 
 export const Product: React.FC = () => {
   return (
@@ -15,7 +26,7 @@ export const Product: React.FC = () => {
           </div>
 
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#173B24] leading-tight mb-4">
-            Mẫu nhang khoanh THE TEE-O
+            Mẫu nhang nụ THE TEE-O
           </h2>
 
           {/* Badge: Đang nghiên cứu và hoàn thiện mẫu */}
@@ -24,9 +35,83 @@ export const Product: React.FC = () => {
             <span>Đang nghiên cứu và hoàn thiện mẫu</span>
           </div>
 
+          <div className="flex justify-center mb-6">
+            <img
+              src={PRODUCT_LABEL_IMAGE}
+              alt="Nhãn sản phẩm Nhang muỗi từ cùi tiêu khô THE TEE-O — 10 nụ/hộp"
+              className="w-44 h-44 sm:w-52 sm:h-52 object-contain drop-shadow-md hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+
           <p className="text-base sm:text-lg text-[#173B24]/85 leading-relaxed font-normal">
             Sản phẩm đang nghiên cứu và hoàn thiện, sử dụng cùi tiêu khô đã sơ chế làm nguyên liệu sinh khối cho nền nhang, kết hợp chất kết dính và tinh dầu thực vật.
           </p>
+        </div>
+
+        {/* Thành phần, Công dụng & Hướng dẫn sử dụng */}
+        <div className="max-w-5xl mx-auto mb-14 bg-[#173B24] text-[#FAF7EF] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#D4B365]/30 shadow-lg relative overflow-hidden">
+          <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#D4B365]/10 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Công dụng */}
+          <div className="pb-7 border-b border-[#D4B365]/30 relative z-10">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-linear-to-r from-[#D4B365] to-[#e6c97a] text-[#173B24] font-serif font-bold text-sm sm:text-base shadow-xs mb-3.5">
+              <span className="w-5 h-5 rounded-full bg-[#173B24] text-[#D4B365] flex items-center justify-center shrink-0">
+                <Settings className="w-3 h-3" />
+              </span>
+              <span>Công dụng:</span>
+            </div>
+            <p className="text-xs sm:text-sm md:text-base text-[#FAF7EF]/95 leading-relaxed pl-1">
+              Xua muỗi, côn trùng như các loại côn trùng nhỏ trong không gian thông qua quá trình đốt cháy phát tán khói.
+            </p>
+          </div>
+
+          {/* Hướng dẫn sử dụng */}
+          <div className="pt-7 relative z-10">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-linear-to-r from-[#D4B365] to-[#e6c97a] text-[#173B24] font-serif font-bold text-sm sm:text-base shadow-xs mb-5">
+              <span className="w-5 h-5 rounded-full bg-[#173B24] text-[#D4B365] flex items-center justify-center shrink-0">
+                <Check className="w-3.5 h-3.5 stroke-[2.5]" />
+              </span>
+              <span>Hướng dẫn sử dụng</span>
+            </div>
+
+            <div className="space-y-4">
+              {[
+                {
+                  Icon: Home,
+                  text: 'Đặt nụ nhang lên một chiếc đĩa sứ, đĩa kim loại nhỏ, hoặc hũ đốt chuyên dụng chịu nhiệt. Không đặt trực tiếp lên mặt bàn gỗ, nhựa hay giấy vì sức nóng ở đáy nụ khi cháy hết có thể làm cháy xém bề mặt.',
+                },
+                {
+                  Icon: Clock,
+                  text: 'Dùng bật lửa đốt cháy phần chóp nhọn trên đỉnh của nụ nhang trong khoảng 5 – 10 giây.',
+                },
+                {
+                  Icon: Wind,
+                  text: 'Khi thấy đỉnh nụ nhang đã bén lửa đỏ rực, hãy nhẹ nhàng thổi tắt ngọn lửa (hoặc vẩy nhẹ) để nhang âm ỉ cháy và bắt đầu tỏa khói đều xuống dưới.',
+                },
+                {
+                  Icon: AlertTriangle,
+                  text: 'Đặt nhang ở góc phòng, gần cửa nơi khuất gió nhưng vẫn đảm bảo không khí để lưu thông.',
+                },
+                {
+                  Icon: Users,
+                  text: 'Giữ khoảng cách an toàn với các vật dễ cháy (rèm cửa, chăn màn, giấy tờ) và đặt ngoài tầm với của trẻ nhỏ, thú cưng; tránh đặt ngay luồng gió.',
+                },
+              ].map((item, idx) => {
+                const IconComponent = item.Icon;
+                return (
+                  <div key={idx} className="flex items-start gap-3.5 sm:gap-4">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border-2 border-[#D4B365] bg-[#122c1d] text-[#D4B365] flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                      <IconComponent className="w-4 h-4 sm:w-5 sm:h-5" />
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#FAF7EF]/90 leading-relaxed pt-1">
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
         {/* Featured Real Product Image & Product Attributes */}
@@ -61,7 +146,7 @@ export const Product: React.FC = () => {
                     Nền nhang từ cùi tiêu khô
                   </h3>
                   <p className="text-xs sm:text-sm text-[#173B24]/85 leading-relaxed">
-                    Sử dụng bột cùi tiêu đã qua sơ chế làm nguyên liệu sinh khối cho nền nhang. Cấu trúc chất xơ tự nhiên hỗ trợ duy trì quá trình cháy đều và ổn định cho mẫu nhang khoanh.
+                    Sử dụng bột cùi tiêu đã qua sơ chế làm nguyên liệu sinh khối cho nền nhang. Cấu trúc chất xơ tự nhiên hỗ trợ duy trì quá trình cháy đều và ổn định cho mẫu nhang nụ.
                   </p>
                 </div>
               </div>

@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   }, []);
 
   const navLinks = [
-    { label: 'Về dự án', href: '#ve-du-an' },
+    { label: 'Câu chuyện', href: '#ve-du-an' },
     { label: 'Sản phẩm', href: '#san-pham' },
     { label: 'Quy trình', href: '#quy-trinh' },
     { label: 'Thị trường', href: '#thi-truong' },
@@ -76,7 +76,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                 THE TEE-O
               </span>
               <span className="text-[10px] sm:text-xs font-medium text-[#754C30] tracking-wider uppercase">
-                Dự án sinh viên · Trường Đại học Kiên Giang
+                Trường Đại học Kiên Giang
               </span>
             </div>
           </a>
@@ -144,7 +144,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
           <div className="fixed top-[61px] left-0 right-0 bg-[#FAF7EF] border-b border-[#173B24]/15 shadow-xl z-50 px-6 py-6 transition-all duration-300">
             <div className="flex flex-col gap-1.5">
               <div className="pb-2 mb-2 border-b border-[#173B24]/10 flex items-center justify-between text-xs text-[#754C30] font-medium">
-                <span>Dự án sinh viên · Trường Đại học Kiên Giang</span>
+                <span>Nhóm sinh viên · Trường Đại học Kiên Giang</span>
               </div>
               {navLinks.map((item) => (
                 <a
@@ -163,7 +163,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                   onClick={(e) => handleNavClick(e, '#lien-he')}
                   className="w-full flex items-center justify-center gap-2 bg-[#173B24] text-[#FAF7EF] py-3 rounded-xl font-medium text-center shadow-xs"
                 >
-                  <span>Liên hệ nhóm dự án</span>
+                  <span>Liên hệ THE TEE-O</span>
                   <ArrowUpRight className="w-4 h-4 text-[#D4B365]" />
                 </a>
                 <a

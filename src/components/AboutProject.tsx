@@ -11,14 +11,11 @@ export const AboutProject: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#D4B365]/20 text-[#754C30] text-xs font-semibold uppercase tracking-wider mb-3">
             <Sprout className="w-3.5 h-3.5" />
-            <span>Về dự án</span>
+            <span>Câu chuyện</span>
           </div>
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#173B24] leading-tight mb-4">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#173B24] leading-tight">
             Cùi tiêu sau sơ chế có thể dùng để làm gì?
           </h2>
-          <p className="text-base sm:text-lg text-[#173B24]/85 leading-relaxed font-normal">
-            Từ thực tế phụ phẩm hồ tiêu chưa được tận dụng hiệu quả, nhóm hình thành ý tưởng nghiên cứu nhang muỗi từ cùi tiêu khô, nhằm tạo thêm giá trị cho nguyên liệu địa phương.
-          </p>
         </div>
 
         {/* Story Narrative + Green Pepper Image */}
@@ -50,7 +47,7 @@ export const AboutProject: React.FC = () => {
                 Hồ tiêu là cây trồng truyền thống nổi bật tại vùng Đồng bằng sông Cửu Long. Tuy nhiên, sau các công đoạn tuốt tách lấy hạt tiêu thành phẩm, phần cùi cuống tiêu thường bị bỏ lại, chưa được khai thác giá trị sử dụng tương xứng.
               </p>
               <p className="text-sm sm:text-base text-[#173B24]/85 leading-relaxed">
-                Nhóm sinh viên Trường Đại học Kiên Giang tìm tòi phương thức sơ chế, nghiền mịn và phối trộn phần cùi khô này thành cốt nền tự nhiên cho nhang xua muỗi, hướng tới giảm thiểu lãng phí và gia tăng giá trị chuỗi nông sản.
+                Chúng tôi tìm tòi phương thức sơ chế, nghiền mịn và phối trộn phần cùi khô này thành cốt nền tự nhiên cho nhang xua muỗi, hướng tới giảm thiểu lãng phí và gia tăng giá trị chuỗi nông sản.
               </p>
             </div>
 
@@ -66,14 +63,14 @@ export const AboutProject: React.FC = () => {
                     <Layers className="w-4 h-4 text-[#D4B365]" />
                   </div>
                   <div className="font-serif text-3xl sm:text-4xl font-bold text-white mb-2">
-                    Khoảng 1.000 ha
+                    390 ha
                   </div>
                   <p className="text-xs sm:text-sm text-[#FAF7EF]/90">
-                    Diện tích trồng hồ tiêu tại Kiên Giang (cũ).
+                    Diện tích trồng tiêu tỉnh An Giang.
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-white/15 text-[11px] text-[#FAF7EF]/75 italic">
-                  Theo nguồn năm 2023.
+                  Theo nguồn báo An Giang 2025.
                 </div>
               </div>
 

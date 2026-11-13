@@ -11,7 +11,7 @@ const TEAM: TeamMember[] = [
   {
     name: 'Võ Trà My',
     initials: 'TM',
-    role: 'Thành viên dự án',
+    role: 'Thành viên',
     focus: 'Nhận diện thương hiệu và truyền thông',
     image: '/assets/aistudio/my_88acfd1a.jpg',
     objectPosition: '50% 53%',
@@ -20,7 +20,7 @@ const TEAM: TeamMember[] = [
   {
     name: 'Lê Thị Hoàng Đẹp',
     initials: 'HĐ',
-    role: 'Thành viên dự án',
+    role: 'Thành viên',
     focus: 'Khảo sát thị trường và kế hoạch tài chính',
     image: '/assets/aistudio/dep_b43400bd.jpg',
     objectPosition: '50% 53%',
@@ -30,25 +30,25 @@ const TEAM: TeamMember[] = [
     name: 'Nguyễn Nhựt Thanh',
     initials: 'NT',
     role: 'Trưởng nhóm',
-    focus: 'Điều phối dự án và nghiên cứu nguyên liệu',
+    focus: 'Điều phối chung và nghiên cứu nguyên liệu',
     image: '/assets/aistudio/thanh_ffbfbc41.jpg',
     objectPosition: '48% 52%',
     transformScale: '1.5',
   },
   {
-    name: 'Thành Đạt',
-    initials: 'TĐ',
-    role: 'Thành viên dự án',
-    focus: 'Kỹ thuật sản xuất thử nghiệm và tạo hình nhang khoanh',
+    name: 'Nguyễn Chí Đạt',
+    initials: 'CĐ',
+    role: 'Thành viên',
+    focus: 'Kỹ thuật sản xuất thử nghiệm và tạo hình nhang nụ',
     image: '/assets/aistudio/dat_ebc9a4f1.jpg',
     objectPosition: '50% 18%',
     transformScale: '1.15',
   },
   {
-    name: 'Mỹ Ngọc',
-    initials: 'MN',
-    role: 'Thành viên dự án',
-    focus: 'Nghiên cứu thành phần và hỗ trợ nguồn nguyên liệu',
+    name: 'Dương Ngọc My',
+    initials: 'NM',
+    role: 'Thành viên',
+    focus: 'Khảo sát thị trường và kế hoạch tài chính',
     image: '/assets/aistudio/my-ngoc_7e1aa09c.jpg',
     objectPosition: '50% 28%',
     transformScale: '1.4',
@@ -63,7 +63,7 @@ export const Team: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#173B24]/10 text-[#173B24] text-xs font-semibold uppercase tracking-wider mb-3">
             <GraduationCap className="w-3.5 h-3.5 text-[#754C30]" />
-            <span>Dự án sinh viên · Trường Đại học Kiên Giang</span>
+            <span>Trường Đại học Kiên Giang</span>
           </div>
 
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#173B24] leading-tight mb-4">
@@ -71,7 +71,7 @@ export const Team: React.FC = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-[#173B24]/80 leading-relaxed font-normal">
-            Dự án được khởi xướng và phát triển bởi tập thể 5 thành viên sinh viên Trường Đại học Kiên Giang với niềm đam mê khởi nghiệp nông nghiệp tuần hoàn.
+            THE TEE-O được khởi xướng và phát triển bởi tập thể 5 thành viên sinh viên Trường Đại học Kiên Giang với niềm đam mê khởi nghiệp nông nghiệp tuần hoàn.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export const Team: React.FC = () => {
               <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-[#FAF7EF]">
                 <img
                   src={FULL_TEAM_PHOTO}
-                  alt="Nhóm 5 sinh viên dự án THE TEE-O chụp ảnh cùng standee dự án tại Trường Đại học Kiên Giang"
+                  alt="Nhóm 5 sinh viên THE TEE-O chụp ảnh cùng standee tại Trường Đại học Kiên Giang"
                   className="w-full h-full object-cover hover:scale-102 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -97,7 +97,7 @@ export const Team: React.FC = () => {
                 Tinh thần nhiệt huyết & nghiên cứu trách nhiệm
               </h3>
               <p className="text-xs sm:text-sm text-[#173B24]/85 leading-relaxed">
-                Các thành viên phối hợp chặt chẽ từ khâu khảo sát thực địa các vườn tiêu, chuẩn bị nguyên liệu, thử nghiệm ép khuôn nhang khoanh đến đo lường phản hồi của người dùng.
+                Các thành viên phối hợp chặt chẽ từ khâu khảo sát thực địa các vườn tiêu, chuẩn bị nguyên liệu, thử nghiệm ép khuôn nhang nụ đến đo lường phản hồi của người dùng.
               </p>
               <div className="pt-3 border-t border-[#173B24]/10 text-xs text-[#754C30] flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#173B24]" />
@@ -179,7 +179,7 @@ export const Team: React.FC = () => {
               Minh chứng thành tích Giải Ba
             </h3>
             <p className="text-xs sm:text-sm text-[#754C30] mt-1">
-              Thành tích khen thưởng tại cuộc thi khởi nghiệp đổi mới sáng tạo cấp trường
+              Giải thưởng tại cuộc thi KGU START-UP VII năm 2026
             </p>
           </div>
 
@@ -189,13 +189,13 @@ export const Team: React.FC = () => {
               <div className="relative aspect-4/3 w-full rounded-xl overflow-hidden bg-white">
                 <img
                   src={CERTIFICATE_IMAGE}
-                  alt="Giấy khen Giải Ba Dự án Nhang muỗi từ cùi tiêu khô"
+                  alt="Giấy khen Giải Ba Nhang muỗi từ cùi tiêu khô"
                   className="w-full h-full object-cover hover:scale-103 transition-transform duration-500"
                   loading="lazy"
                 />
               </div>
               <p className="mt-3 text-xs font-semibold text-[#173B24] text-center">
-                Giấy khen Giải Ba chính thức của dự án
+                Giấy khen Giải Ba chính thức của nhóm
               </p>
             </div>
 
@@ -204,7 +204,7 @@ export const Team: React.FC = () => {
               <div className="relative aspect-4/3 w-full rounded-xl overflow-hidden bg-white">
                 <img
                   src={AWARD_CEREMONY_IMAGE}
-                  alt="Khoảnh khắc đại diện nhóm dự án nhận giải thưởng trên sân khấu"
+                  alt="Khoảnh khắc đại diện nhóm nhận giải thưởng trên sân khấu"
                   className="w-full h-full object-cover hover:scale-103 transition-transform duration-500"
                   loading="lazy"
                 />

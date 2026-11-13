@@ -54,7 +54,7 @@ export const Contact: React.FC = () => {
               </a>
 
               <p className="text-xs sm:text-sm text-[#FAF7EF]/80 leading-relaxed mb-6">
-                Liên hệ trực tiếp với nhóm sinh viên dự án THE TEE-O để trao đổi về mẫu thử nghiệm, đóng góp ý kiến kỹ thuật hoặc tìm hiểu khả năng cung ứng cùi tiêu khô.
+                Liên hệ trực tiếp với nhóm sinh viên THE TEE-O để trao đổi về mẫu thử nghiệm, đóng góp ý kiến kỹ thuật hoặc tìm hiểu khả năng cung ứng cùi tiêu khô.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ export const Contact: React.FC = () => {
                 className="bg-[#D4B365] hover:bg-[#c4a457] text-[#173B24] px-6 py-3.5 rounded-xl text-sm font-bold transition-all inline-flex items-center gap-2 shadow-sm"
               >
                 <Phone className="w-4 h-4" />
-                <span>Gọi nhóm dự án</span>
+                <span>Gọi cho nhóm</span>
               </a>
 
               <button

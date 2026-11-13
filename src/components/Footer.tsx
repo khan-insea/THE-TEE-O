@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
               <span className="font-serif text-lg font-bold tracking-wider text-white">
                 THE TEE-O
               </span>
-              <span className="text-xs text-[#D4B365] block">
+              <span className="font-['Playfair_Display',Georgia,serif] italic text-sm font-medium text-[#D4B365] block tracking-wide">
                 Nhang muỗi từ cùi tiêu khô
               </span>
             </div>
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-2 text-center sm:text-left">
             <Sparkles className="w-3.5 h-3.5 text-[#D4B365] shrink-0" />
             <p className="font-medium text-white/90">
-              THE TEE-O · Dự án sinh viên · Trường Đại học Kiên Giang
+              THE TEE-O · Trường Đại học Kiên Giang
             </p>
           </div>
 
